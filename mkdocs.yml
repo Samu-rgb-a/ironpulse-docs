@@ -1,0 +1,50 @@
+site_name: IronPulse Tracker
+site_description: Tu aplicación definitiva para registrar entrenamientos y analizar el progreso en el gimnasio.
+site_author: Samu-rgb-a
+site_url: https://Samu-rgb-a.github.io/ironpulse-docs/
+
+theme:
+  name: material
+  language: es
+  palette:
+    # Modo oscuro por defecto con acento azul/cian
+    - scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo claro
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo oscuro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - tables
+  - attr_list
+
+nav:
+  - Inicio: index.md
+  - Características: caracteristicas.md
+  - Seguimiento y Gráficas: seguimiento-progreso.md
+  - Comunidad y Planes: comunidad-y-planes.md
